@@ -1,0 +1,7 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <h1>Welcome to the Demo Page</h1>
+    <input type="button" value="Go Back to Main Page" onclick="@("window.location.href='" + @Url.Action("Index", "Home") + "'");" />
+}

@@ -1,0 +1,14 @@
+﻿@using ASP.NETCore_BasicWebApp.Controllers
+@using Microsoft.AspNetCore.Server.IIS.Core
+@using System.Runtime.InteropServices
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <input type="button" value="Go to Demo Page" onclick="@("window.location.href='" + @Url.Action("Index", "Demo") + "'");" />
+    <br/>
+    <a class="btn" @Html.ActionLink("Throw an Exception", "ThrowException", "Home", new {@class="btn"})></a>
+</div>
